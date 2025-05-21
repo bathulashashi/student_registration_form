@@ -1,0 +1,221 @@
+body{
+    font-family:'segoe UI',sans-serif;
+    background-color: #dadde1;
+    margin: 0;
+    padding:0;
+    color:#333;
+}
+h1,h2{
+    color:#2c3e50;
+}
+/*header*/
+header{
+    text-align: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-bottom:5px solid #c7acac;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header h1{
+    margin: 0;
+    font-size: 2rem;
+    color:#c24b4b;
+}
+header p{
+    font-size: 1.1rem;
+    color:#62568a;
+}
+/*form sction*/
+#form-section{
+   
+    max-width:30%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ae9e9e;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+}
+form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#form-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+form input{
+    width: 100%;
+    padding:8px;
+    margin-top: 5px;
+    margin-bottom:15px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    box-sizing: border-box;
+}
+form button{
+    width:100%;
+    padding:10px;
+    background-color: #494c54;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #674989;
+}
+#display-section{
+    max-width:70%;
+    margin:40px auto;
+    padding:20px;
+    background-color: #f2f2f2;
+    border:1px solid #ccc;
+    border-radius:10px;
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+table thead{
+    background-color: #e0e0e0;
+
+}
+table th,table td{
+    padding:12px 15px;
+    border:1px solid #ccc;
+    text-align: center;
+}
+table tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+table button{
+    padding:5px 10px;
+    margin:2px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.edit-btn{
+    background-color: #2196f3;
+    color:white;
+}
+.delete-btn{
+    background-color: #f44336;
+    color:white;
+}
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+#display-section {
+    max-width:70%;  /* fixed */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+#form-display-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+table tbody tr:hover {
+    background-color: #d3d3d3;
+}
+
+#form-section, #display-section {
+  flex: 1 1 400px; /* Grow, shrink, base width */
+  max-width: 600px;
+  box-sizing: border-box;
+}
+/* Make the main container flex but wrap on small screens */
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Form and Display section base styles */
+#form-section, #display-section {
+  flex: 1 1 400px; /* Grow, shrink, base width */
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Make table scroll horizontally on small screens */
+#display-section {
+  overflow-x: auto;
+}
+
+/* Responsive typography */
+header h1 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* Stack form and table vertically */
+  div {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #form-section, #display-section {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  form input, form button {
+    font-size: 1rem;
+  }
+
+  table th, table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  form input, form button {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  table th, table td {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  #form-section {
+    padding: 15px 10px;
+  }
+
+  #display-section {
+    padding: 15px 10px;
+  }
+}
+
+

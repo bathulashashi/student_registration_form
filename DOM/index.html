@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="shashi bathula">
+    <meta name="description" content="a simple student registration system">
+
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css"><!--linked to css file-->
+</head>
+<body>
+    <header>
+        <h1>
+            STUDENT REGISTRATION SYSTEM
+        </h1>
+        <p>manage,record,view,edit student records all in one place</p>
+        <marquee>enter your details: student name ,studentid,emailid,contact...etc ,student details, including Student name, student ID,
+email ID, and Contact No.</marquee>
+    </header>
+    <!--registration form-->
+    <div>
+    <section id="form-section">
+        <h2>REGISTER A NEW STUDENT</h2>
+        <form id="registrationform">
+            <label for="studentname">STUDENT NAME:</label>
+            <input type="text" id="studentname" name="studentname" placeholder="enter full name" required >
+            <label for="studentid">STUDENT ID:</label>
+            <input type="text" id="studentid" name="studentid" placeholder="enter student ID" required>
+            <label for="email">EMAIL ID:</label>
+            <input type="email" id="email" placeholder="enter email address" required>
+            <label for="contact">CONTACT NUMBER:</label>
+            <input type="number" id="contact" placeholder="`enter contact number" required>
+            <button type="submit">REGISTER</button>
+        </form>
+    </section>
+    <section id="display-section"><!--students records display section-->
+            <h2>REGISTERED STUDENTS</h2>
+            <table id="studenttable">
+                <thead>
+                    <tr>
+                        <th>STUDENT NAME</th>
+                        <th>STUDENT ID</th>
+                        <th>EMAIL ID</th>
+                        <th>CONTACT No</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--rows are inserted by using js-->
+                </tbody>
+            </table>
+        </section>
+        </div>
+    <script src="script.js"></script><!--linked to js  file-->
+</body>
+</html>
